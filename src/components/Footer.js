@@ -1,6 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { BsTwitterX, BsFacebook, BsPinterest, BsInstagram, BsYoutube } from "react-icons/bs";
+import {
+  BsTwitterX,
+  BsFacebook,
+  BsPinterest,
+  BsInstagram,
+  BsYoutube,
+} from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -47,8 +53,18 @@ const Footer = () => {
                   Tantran Hill, Accra <br />
                   Ghana
                 </address>
-                <a href="tel:+233 2323422222" className="text-white fs-smaller ls-5 d-block mb-2 mb-sm-3">+233 2323422222</a>
-                <a href="mailto:dummy@store.com" className="text-white fs-smaller ls-5 mb-3 mb-sm-4">dummy@store.com</a>
+                <a
+                  href="tel:+233 2323422222"
+                  className="text-white fs-smaller ls-5 d-block mb-2 mb-sm-3"
+                >
+                  +233 2323422222
+                </a>
+                <a
+                  href="mailto:dummy@store.com"
+                  className="text-white fs-smaller ls-5 mb-3 mb-sm-4"
+                >
+                  dummy@store.com
+                </a>
                 <div className="social_icons d-flex align-items-center gap-1">
                   <a href="/">
                     <BsTwitterX />
@@ -71,28 +87,52 @@ const Footer = () => {
             <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
               <h5 className="text-white mb-3">Information</h5>
               <div className="footer-links d-flex flex-column">
-                <Link className="text-white py-1 py-sm-2 mb-1 fs-smaller ls-5">Privacy Policy</Link>
-                <Link className="text-white py-1 py-sm-2 mb-1 fs-smaller ls-5">Refund Policy</Link>
-                <Link className="text-white py-1 py-sm-2 mb-1 fs-smaller ls-5">Shipping Policy</Link>
-                <Link className="text-white py-1 py-sm-2 mb-1 fs-smaller ls-5">Terms Of Service</Link>
+                <Link className="text-white py-1 py-sm-2 mb-1 fs-smaller ls-5">
+                  Privacy Policy
+                </Link>
+                <Link className="text-white py-1 py-sm-2 mb-1 fs-smaller ls-5">
+                  Refund Policy
+                </Link>
+                <Link className="text-white py-1 py-sm-2 mb-1 fs-smaller ls-5">
+                  Shipping Policy
+                </Link>
+                <Link className="text-white py-1 py-sm-2 mb-1 fs-smaller ls-5">
+                  Terms Of Service
+                </Link>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
               <h5 className="text-white mb-3">Account</h5>
               <div className="footer-links d-flex flex-column">
-                <Link className="text-white py-1 py-sm-2 mb-1 fs-smaller ls-5">Search</Link>
-                <Link className="text-white py-1 py-sm-2 mb-1 fs-smaller ls-5">About US</Link>
-                <Link className="text-white py-1 py-sm-2 mb-1 fs-smaller ls-5">FAQs</Link>
-                <Link className="text-white py-1 py-sm-2 mb-1 fs-smaller ls-5">Contact</Link>
+                <Link className="text-white py-1 py-sm-2 mb-1 fs-smaller ls-5">
+                  Search
+                </Link>
+                <Link className="text-white py-1 py-sm-2 mb-1 fs-smaller ls-5">
+                  About US
+                </Link>
+                <Link className="text-white py-1 py-sm-2 mb-1 fs-smaller ls-5">
+                  FAQs
+                </Link>
+                <Link className="text-white py-1 py-sm-2 mb-1 fs-smaller ls-5">
+                  Contact
+                </Link>
               </div>
             </div>
             <div className="col-lg-2 col-md-6 mb-4 mb-lg-0">
               <h5 className="text-white mb-3">Quick Links</h5>
               <div className="footer-links d-flex flex-column">
-                <Link className="text-white py-1 py-sm-2 mb-1 fs-smaller ls-5">Laptops</Link>
-                <Link className="text-white py-1 py-sm-2 mb-1 fs-smaller ls-5">Headphones</Link>
-                <Link className="text-white py-1 py-sm-2 mb-1 fs-smaller ls-5">Tablets</Link>
-                <Link className="text-white py-1 py-sm-2 mb-1 fs-smaller ls-5">Watch</Link>
+                <Link className="text-white py-1 py-sm-2 mb-1 fs-smaller ls-5">
+                  Laptops
+                </Link>
+                <Link className="text-white py-1 py-sm-2 mb-1 fs-smaller ls-5">
+                  Headphones
+                </Link>
+                <Link className="text-white py-1 py-sm-2 mb-1 fs-smaller ls-5">
+                  Tablets
+                </Link>
+                <Link className="text-white py-1 py-sm-2 mb-1 fs-smaller ls-5">
+                  Watch
+                </Link>
               </div>
             </div>
           </div>

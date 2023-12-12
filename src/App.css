@@ -9,6 +9,10 @@
   --color-3b4149: #3b4149;
   --color-febd69: #febd69;
   --color-232f3e: #232f3e;
+  --color-bf4800: #bf4800;
+  --color-1c1b1b: #1c1b1b;
+
+  --base-border-radius: 10px;
 }
 
 body {
@@ -23,6 +27,19 @@ a {
 .form-control:focus {
   box-shadow: none;
   border-color: inherit;
+}
+
+.button {
+  background-color: var(--color-232f3e);
+  color: white;
+  font-size: 14px;
+  padding: 13px 33px;
+  border-radius: 25px;
+}
+
+.button:hover {
+  background-color: var(--color-febd69);
+  color: var(--color-232f3e);
 }
 
 /* gap start */
@@ -47,6 +64,12 @@ a {
 }
 /* gap end */
 
+/* border-radius start */
+.rounded-base {
+  border-radius: var(--base-border-radius);
+}
+/* border-radius end */
+
 /* font-size start */
 .fs-small {
   font-size: 14px;
@@ -64,6 +87,10 @@ a {
 /* letter spacing start */
 .ls-3 {
   letter-spacing: 0.3px;
+}
+
+.ls-4 {
+  letter-spacing: 0.4px;
 }
 
 .ls-5 {
@@ -237,7 +264,7 @@ footer .input-group-text button:hover {
   color: var(--color-232f3e);
 }
 
-footer .input-group-text address {
+footer address {
   line-height: 25px;
 }
 
@@ -252,26 +279,237 @@ footer .social_icons a {
   color: white;
 }
 
-footer .footer-links a:hover, 
-footer .social_icons a:hover{
+footer .footer-links a:hover,
+footer .social_icons a:hover {
   color: var(--color-febd69) !important;
 }
 /* Footer End */
 
+/* Home Page Start */
+.main-banner-content {
+  top: 12%;
+  left: 5%;
+}
+
+.main-banner-content h4 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color-bf4800);
+  margin: 0 0 12px;
+}
+
+.main-banner-content h5 {
+  font-size: 48px;
+  line-height: 54px;
+  letter-spacing: -2px;
+  font-weight: 500;
+  color: var(--color-1c1b1b);
+  margin: 14px 0 17px;
+}
+
+.main-banner-content p {
+  line-height: 28px;
+  letter-spacing: 0.4px;
+  margin: 0 0 32px;
+  color: var(--color-1c1b1b);
+  font-size: 15px;
+}
+
+.home-wrapper-1 .carousel-indicators button {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin: 0 5px;
+  opacity: 1;
+}
+
+.home-wrapper-1 .carousel-indicators .active {
+  background-color: var(--color-232f3e);
+}
+
+.smaller-banner-wrapper img {
+  transition: all 300ms ease;
+}
+
+.smaller-banner-wrapper a:hover img {
+  transform: scale(1.04);
+}
+
+.small-banner-content {
+  top: 20%;
+  left: 5%;
+  width: 57%;
+}
+
+.small-banner-content h4 {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color-bf4800);
+  margin: 0 0 12px;
+}
+
+.small-banner-content h5 {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 500;
+  color: var(--color-1c1b1b);
+  margin: 5px 0 7px;
+}
+
+.small-banner-content p {
+  line-height: 22px;
+  letter-spacing: 0.4px;
+  margin: 0 0 32px;
+  color: var(--color-1c1b1b);
+  font-size: 13px;
+}
+/* Home Page End */
+
 /* --------------------------------------------------------------- */
 
 /* MEDIA QUERIES */
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) {
+  .button {
+    font-size: 12px;
+    padding: 11px 30px;
+  }
+
+  /* Home Page Start */
+  .main-banner-content h5 {
+    font-size: 42px;
+    line-height: 48px;
+    margin: 12px 0 15px;
+  }
+
+  .main-banner-content h4,
+  .main-banner-content p {
+    font-size: 14px;
+  }
+
+  .main-banner-content p {
+    margin: 0 0 28px;
+  }
+
+  .small-banner-content {
+    top: 17%;
+  }
+
+  .small-banner-content h5 {
+    font-size: 20px;
+  }
+
+  .small-banner-content h4,
+  .small-banner-content p {
+    font-size: 12px;
+  }
+  /* Home Page End */
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+  .button {
+    font-size: 12px;
+    padding: 10px 22px;
+    line-height: 16px;
+  }
+
+  /* Home Page Start */
+  .main-banner-content h5 {
+    font-size: 32px;
+    margin: 0 0 12px;
+    line-height: 34px;
+  }
+
+  .main-banner-content h4 {
+    font-size: 11px;
+    line-height: 18px;
+    margin: 0 0 6px;
+  }
+
+  .main-banner-content p {
+    font-size: 11px;
+    line-height: 16px;
+    margin: 0 0 16px;
+  }
+
+  .small-banner-content h5 {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .small-banner-content h4,
+  .small-banner-content p {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  /* Home Page End */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  /* Home Page Start */
+  .small-banner-content {
+    top: 14%;
+    width: 63%;
+  }
+
+  .small-banner-content h5 {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 4px 0;
+  }
+
+  .small-banner-content h4,
+  .small-banner-content p {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  /* Home Page End */
+}
+
 /* Medium devices (tablets, 768px and below) */
 @media (max-width: 768px) {
+  /* Header Start */
   .header-upper .hamburger img,
   .header-upper .header-upper-links img {
     width: 30px;
     height: 30px;
   }
+  /* Header End */
+
+  /* Home Page Start */
+  .small-banner-content {
+    top: 18%;
+    left: 8%;
+    width: 45%;
+  }
+
+  .small-banner-content h5 {
+    font-size: 15px;
+    line-height: 22px;
+    margin: 5px 0 7px;
+  }
+
+  .small-banner-content h4,
+  .small-banner-content p {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  /* Home Page End */
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
+  .button {
+    font-size: 10px;
+    padding: 5px 12px;
+    line-height: 16px;
+  }
+
+  /* Header Start */
   .header-upper .hamburger img,
   .header-upper .header-upper-links img {
     width: 25px;
@@ -286,9 +524,55 @@ footer .social_icons a:hover{
     top: -9px;
     right: -7px;
   }
+  /* Header End */
 
+  /* Footer Start */
   footer .input-group-text button {
     font-size: 13px;
     padding: 6px 10px;
   }
+  /* Footer End */
+
+  /* Home Page Start */
+  .main-banner-content {
+    top: 15%;
+  }
+
+  .main-banner-content h4 {
+    font-size: 10px;
+    line-height: 15px;
+    margin: 0;
+  }
+
+  .main-banner-content h5 {
+    font-size: 20px;
+    margin: 10px 0 13px;
+    letter-spacing: -1px;
+    line-height: 15px;
+  }
+
+  .main-banner-content p {
+    font-size: 11px;
+    line-height: 16px;
+    margin: 0 0 16px;
+  }
+
+  .small-banner-content {
+    width: 100%;
+  }
+
+  .small-banner-content {
+    top: 35%;
+  }
+
+  .small-banner-content h5 {
+    font-size: 13px;
+    margin: 0;
+  }
+
+  .small-banner-content h4 {
+    font-size: 10px;
+    line-height: 12px;
+  }
+   /* Home Page End */
 }
