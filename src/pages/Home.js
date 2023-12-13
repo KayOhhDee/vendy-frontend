@@ -76,7 +76,7 @@ const Home = () => {
             </div>
             <div className="col-lg-6">
               <div className="row smaller-banner-wrapper g-lg-3 g-2">
-                <Link className="col-6 col-md-3 col-lg-6">               
+                <Link className="col-6 col-md-3 col-lg-6">
                   <div className="small-banner position-relative rounded-base overflow-hidden">
                     <img
                       src="/images/catbanner-01.jpg"
@@ -84,9 +84,7 @@ const Home = () => {
                       alt="small banner"
                     />
                     <div className="small-banner-content position-absolute">
-                      <h4 className="text-uppercase ls-2 mb-0">
-                        BEST SALE
-                      </h4>
+                      <h4 className="text-uppercase ls-2 mb-0">BEST SALE</h4>
                       <h5>Laptops Max</h5>
                       <p className="ls-2 d-none d-sm-block">
                         From $999.00 or $41.62/mo.
@@ -102,9 +100,7 @@ const Home = () => {
                       alt="small banner"
                     />
                     <div className="small-banner-content position-absolute">
-                      <h4 className="text-uppercase ls-2 mb-0">
-                        NEW ARRIVAL
-                      </h4>
+                      <h4 className="text-uppercase ls-2 mb-0">NEW ARRIVAL</h4>
                       <h5>Buy IPad Air</h5>
                       <p className="ls-2 d-none d-sm-block">
                         From $999.00 or $41.62/mo. for 24 mo.*
@@ -120,9 +116,7 @@ const Home = () => {
                       alt="small banner"
                     />
                     <div className="small-banner-content position-absolute">
-                      <h4 className="text-uppercase ls-2 mb-0">
-                        15% OFF
-                      </h4>
+                      <h4 className="text-uppercase ls-2 mb-0">15% OFF</h4>
                       <h5>Smartwatch 7</h5>
                       <p className="ls-2 d-none d-sm-block">
                         Shop the lastest band styles and colors.
@@ -150,6 +144,141 @@ const Home = () => {
                 </Link>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="home-wrapper-2 py-lg-5 py-4">
+        <div
+          className="container-xxl overflow-auto services-wrapper pb-xl-0 pb-2"
+          style={{ whiteSpace: "nowrap" }}
+        >
+          <div className="row">
+            <div className="col-12">
+              <div className="services d-flex align-items-center justify-content-between gap-4">
+                <div className="d-flex align-items-center gap-lg-4 gap-3">
+                  <img src="/images/service.png" alt="" />
+                  <div>
+                    <h6 className="ls-3 mb-1">Free Shipping</h6>
+                    <p className="mb-0 ls-3 fs-smallest">
+                      From all orders over $100
+                    </p>
+                  </div>
+                </div>
+                <div className="d-flex align-items-center gap-lg-4 gap-3">
+                  <img src="/images/service-02.png" alt="" />
+                  <div>
+                    <h6 className="ls-3 mb-1">Daily Surprise Offers</h6>
+                    <p className="mb-0 ls-3 fs-smallest">Save up to 25% off</p>
+                  </div>
+                </div>
+                <div className="d-flex align-items-center gap-lg-4 gap-3">
+                  <img src="/images/service-03.png" alt="" />
+                  <div>
+                    <h6 className="ls-3 mb-1">Support 24/7</h6>
+                    <p className="mb-0 ls-3 fs-smallest">Shop with an expert</p>
+                  </div>
+                </div>
+                <div className="d-flex align-items-center gap-lg-4 gap-3">
+                  <img src="/images/service-04.png" alt="" />
+                  <div>
+                    <h6 className="ls-3 mb-1">Affordable Prices</h6>
+                    <p className="mb-0 ls-3 fs-smallest">
+                      Get Factory direct price
+                    </p>
+                  </div>
+                </div>
+                <div className="d-flex align-items-center gap-lg-4 gap-3">
+                  <img src="/images/service-05.png" alt="" />
+                  <div>
+                    <h6 className="ls-3 mb-1">Secure Payments</h6>
+                    <p className="mb-0 ls-3 fs-smallest">
+                      100% Protected Payments
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="services-scroll-track d-lg-none d-block"></div>
+      </section>
+
+      <section className="home-wrapper-2 pb-lg-5 pb-4">
+        <div className="container-xxl">
+          <div className="categories row justify-content-between align-items-center mx-0">
+            <Link className="col-xl-3 col-sm-6 col-12">
+              <div className="d-flex align-items-center justify-content-between">
+                <div>
+                  <h6>Music & Gaming</h6>
+                  <p className="mb-0 fs-smallest">10 Items</p>
+                </div>
+                <img src="/images/headphone.jpg" alt="camera" />
+              </div>
+            </Link>
+            <Link className="col-xl-3 col-sm-6 col-12">
+              <div className="d-flex align-items-center justify-content-between">
+                <div>
+                  <h6>Cameras</h6>
+                  <p className="mb-0 fs-smallest">10 Items</p>
+                </div>
+                <img src="/images/camera.jpg" alt="camera" />
+              </div>
+            </Link>
+            <Link className="col-xl-3 col-sm-6 col-12">
+              <div className="d-flex align-items-center justify-content-between">
+                <div>
+                  <h6>Smart TV</h6>
+                  <p className="mb-0 fs-smallest">10 Items</p>
+                </div>
+                <img src="/images/tv.jpg" alt="camera" />
+              </div>
+            </Link>
+            <Link className="col-xl-3 col-sm-6 col-12">
+              <div className="d-flex align-items-center justify-content-between">
+                <div>
+                  <h6>Appliances</h6>
+                  <p className="mb-0 fs-smallest">10 Items</p>
+                </div>
+                <img src="/images/homeapp.jpg" alt="camera" />
+              </div>
+            </Link>
+            <Link className="col-xl-3 col-sm-6 col-12">
+              <div className="d-flex align-items-center justify-content-between">
+                <div>
+                  <h6>Music & Gaming</h6>
+                  <p className="mb-0 fs-smallest">10 Items</p>
+                </div>
+                <img src="/images/headphone.jpg" alt="camera" />
+              </div>
+            </Link>
+            <Link className="col-xl-3 col-sm-6 col-12">
+              <div className="d-flex align-items-center justify-content-between">
+                <div>
+                  <h6>Cameras</h6>
+                  <p className="mb-0 fs-smallest">10 Items</p>
+                </div>
+                <img src="/images/camera.jpg" alt="camera" />
+              </div>
+            </Link>
+            <Link className="col-xl-3 col-sm-6 col-12">
+              <div className="d-flex align-items-center justify-content-between">
+                <div>
+                  <h6>Smart TV</h6>
+                  <p className="mb-0 fs-smallest">10 Items</p>
+                </div>
+                <img src="/images/tv.jpg" alt="camera" />
+              </div>
+            </Link>
+            <Link className="col-xl-3 col-sm-6 col-12">
+              <div className="d-flex align-items-center justify-content-between">
+                <div>
+                  <h6>Appliances</h6>
+                  <p className="mb-0 fs-smallest">10 Items</p>
+                </div>
+                <img src="/images/homeapp.jpg" alt="camera" />
+              </div>
+            </Link>
           </div>
         </div>
       </section>
