@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Marquee from "react-fast-marquee";
 
 const Home = () => {
   return (
@@ -279,6 +280,43 @@ const Home = () => {
                 <img src="/images/homeapp.jpg" alt="camera" />
               </div>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="marque-wrapper pb-lg-5 pb-4">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <div className="marquee-inner-wrapper">
+                <Marquee className="d-flex" pauseOnHover gradient>
+                  <div className="mx-4">
+                    <img src="/images/brand-01.png" alt="" />
+                  </div>
+                  <div className="mx-4">
+                    <img src="/images/brand-02.png" alt="" />
+                  </div>
+                  <div className="mx-4">
+                    <img src="/images/brand-03.png" alt="" />
+                  </div>
+                  <div className="mx-4">
+                    <img src="/images/brand-04.png" alt="" />
+                  </div>
+                  <div className="mx-4">
+                    <img src="/images/brand-05.png" alt="" />
+                  </div>
+                  <div className="mx-4">
+                    <img src="/images/brand-06.png" alt="" />
+                  </div>
+                  <div className="mx-4">
+                    <img src="/images/brand-07.png" alt="" />
+                  </div>
+                  <div className="mx-4">
+                    <img src="/images/brand-08.png" alt="" />
+                  </div>
+                </Marquee>
+              </div>
+            </div>
           </div>
         </div>
       </section>
