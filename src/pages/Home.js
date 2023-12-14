@@ -324,6 +324,9 @@ const Home = () => {
 
       <section className="blog-wrapper pb-lg-5 pb-4">
         <div className="container-xxl overflow-auto h-scroll pb-xl-0 pb-2">
+          <div className="col-12">
+            <h3 className="section-heading">Our Lastest Blogs</h3>
+          </div>
           <div className="row flex-nowrap g-lg-4 g-2 g-sm-3">
             <BlogCard />
             <BlogCard />

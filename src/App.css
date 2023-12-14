@@ -46,6 +46,16 @@ a {
   color: var(--color-232f3e);
 }
 
+.section-heading {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: left;
+  color: var(--color-1c1b1b);
+  letter-spacing: 0;
+}
+
 /* gap start */
 .gap-10 {
   gap: 10px;
@@ -656,6 +666,11 @@ footer .social_icons a:hover {
 
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
+  .section-heading {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
   /* -----------Home Page Start-------------------- */
   /* Home Wrapper 1 Start */
   .small-banner-content {
@@ -777,6 +792,16 @@ footer .social_icons a:hover {
   footer .input-group-text button {
     font-size: 13px;
     padding: 6px 10px;
+  }
+
+  footer h5,
+  footer .footer-top-data h4 {
+    font-size: 18px;
+  }
+
+  footer .footer-top-data img {
+    width: 20px;
+    height: 20px;
   }
   /* --------------Footer End---------------- */
 
