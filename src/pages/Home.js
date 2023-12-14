@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import BlogCard from "../components/BlogCard";
+import ProductCard from "../components/ProductCard";
 
 const Home = () => {
   return (
@@ -283,6 +284,23 @@ const Home = () => {
             </Link>
           </div>
         </div>
+      </section>
+
+      <section className="featured-wrapper pb-lg-5 pb-4">
+        <div className="container-xxl overflow-auto h-scroll pb-xxl-0 pb-2">
+          <div className="col-12">
+            <h3 className="section-heading">Featured Collection</h3>
+          </div>
+          <div className="row flex-nowrap g-lg-4 g-2 g-sm-3">
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
+        </div>
+        <div className="h-scroll-track d-xl-none d-block"></div>
       </section>
 
       <section className="marque-wrapper pb-lg-5 pb-4">
