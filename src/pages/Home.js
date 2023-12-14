@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
+import BlogCard from "../components/BlogCard";
 
 const Home = () => {
   return (
@@ -151,7 +152,7 @@ const Home = () => {
 
       <section className="home-wrapper-2 py-lg-5 py-4">
         <div
-          className="container-xxl overflow-auto services-wrapper pb-xl-0 pb-2"
+          className="container-xxl overflow-auto services-wrapper pb-xl-0 pb-2 h-scroll"
           style={{ whiteSpace: "nowrap" }}
         >
           <div className="row">
@@ -202,7 +203,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="services-scroll-track d-lg-none d-block"></div>
+        <div className="h-scroll-track d-lg-none d-block"></div>
       </section>
 
       <section className="home-wrapper-2 pb-lg-5 pb-4">
@@ -319,6 +320,18 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="blog-wrapper pb-lg-5 pb-4">
+        <div className="container-xxl overflow-auto h-scroll pb-xl-0 pb-2">
+          <div className="row flex-nowrap g-lg-4 g-2 g-sm-3">
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
+          </div>
+        </div>
+        <div className="h-scroll-track d-lg-none d-block"></div>
       </section>
     </main>
   );
